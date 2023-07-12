@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.page-actions-cont {
+  height: 3rem;
+  background-color: #218c74;
+  display: flex;
+  align-items: center;
+  paddin-left: 1rem;
+}
+.page-action {
+  margin: 0.5rem;
+  font-family: sans-serif;
+  color: #f1f2f6;
+  cursor: pointer;
+}
+.cellprop-actions-cont {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  cursor: pointer;
+  background-color: #ecf0f1;
+}
+.cellprop-actions-cont > * {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.cellprop-actions-cont > select {
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+.font-family-prop {
+  padding: 0.2rem;
+}
+
+.font-size-prop {
+  padding: 0.2rem;
+}
+.formula-actions-cont {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  background-color: #ecf0f1;
+}
+.formula-actions-cont > * {
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.formula-icon {
+  width: 1.2rem;
+}
+.adress-bar {
+  width: 5rem;
+  text-align: center;
+}
+
+.formula-bar {
+  width: calc(100vw - 5rem);
+}
+
+.formula-actions-cont > input {
+  border: none;
+  outline: none;
+  height: 70%;
+  border-radius: 2px;
+}
+
+.sheet-actions-cont {
+  height: 3rem;
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  gap: 1rem;
+}
+.sheet-actions-cont > * {
+  display: inline-block;
+}
+
+.sheet-add-icon {
+  width: 2vw;
+}
+
+.sheets-folder-cont {
+  height: 80%;
+  width: calc(100vw - 2vw);
+  display: flex;
+  align-items: center;
+}
+.sheet-folder {
+  text-decoration: underline;
+  font-weight: bold;
+  text-decoration-thickness: 5px;
+  font-size: 0.9rem;
+}
+
+.grid-cont {
+  height: calc(100vh - 3rem - 3rem - 2rem - 3rem);
+  position: relative;
+  overflow: auto;
+  background-color: #ecf0f1;
+}
+
+.top-left-dummy {
+  height: 2rem;
+  width: 2rem;
+  background-color: #747d8c;
+  position: fixed;
+  z-index: 1;
+}
+.address-col-cont {
+  position: sticky;
+  top: 2rem;
+  left: 0;
+}
+
+.address-row-cont {
+  /* height: 2rem; */
+  /* background-color: lightpink; */
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 2rem;
+}
+
+.cells-cont {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  /* background-color: lightgreen; */
+}
+
+.address-col {
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  border: 1px solid #dfe4ea;
+}
+
+.address-row {
+  height: 2rem;
+  width: 5rem;
+  /* text-align: center; */
+  border: 1px solid #dfe4ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell-cont {
+  height: 2rem;
+  width: 5rem;
+  border: 1px solid #dfe4ea;
+  outline: none;
+}
+.row-count {
+  display: flex;
+  cursor: pointer;
+}
